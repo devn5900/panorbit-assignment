@@ -7,7 +7,7 @@ const Chat = () => {
     const [isOpen,setIsOpen]= useState(false);
     const {users}= useSelector(store=>store.usersReducer);
   return (
-    <div className={`border-[1px] rounded-xl  border-blue-700 absolute ${isOpen?"-bottom-3":"-bottom-[45%]"} right-10`}>
+    <div className={`border-[1px] rounded-xl  border-blue-700 fixed ${isOpen?"-bottom-3":"-bottom-[45%]"} right-10`}>
         <div className='bg-[#2C65C8] rounded-tl-xl  rounded-tr-xl flex items-center justify-between p-2'>
             <div className='flex items-center gap-2 '>
                 <PiChatBold className='text-white text-2xl' />

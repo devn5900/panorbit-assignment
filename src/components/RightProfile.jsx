@@ -6,7 +6,7 @@ import CommingSoon from './CommingSoon';
 const RightProfile = () => {
     const {activeMenu}= useContext(ProfileContext);
   return (
-    <div>
+    <div className=' '>
         <div className='w-[84vw]'>
         {activeMenu=="Profile"&&<ProfileMenu/>}
         {activeMenu=="Post"&&<CommingSoon/>}

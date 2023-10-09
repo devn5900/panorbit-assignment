@@ -17,7 +17,7 @@ const Profile = () => {
         dispatch({type:ADD_PROFILE,payload:userData});
     },[users,userId])
   return (
-    <div>
+    <div className=' h-screen overflow-hidden'>
         <ProfileContextProvider>
        <div className='flex'>
         <LeftProfile/>
